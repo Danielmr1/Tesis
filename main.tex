@@ -1,0 +1,77 @@
+\documentclass[12pt,a4paper]{report}
+
+% Paquetes básicos
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{left=3cm,right=2cm,top=3cm,bottom=3cm}
+
+% Para índices y referencias
+\usepackage{hyperref}
+\usepackage{tocbibind} % Para incluir índice y bibliografía en el TOC
+
+\begin{document}
+
+% Carátula
+\begin{titlepage}
+    \centering
+    {\Huge\bfseries Título de tu Tesis \par}
+    \vspace{2cm}
+    {\Large Nombre del Autor \par}
+    \vspace{2cm}
+    {\Large Universidad Nacional Agraria de la Selva \par}
+    {\Large Facultad de Ingeniería Ambiental \par}
+    \vfill
+    {\Large Año \par}
+\end{titlepage}
+
+% Página de agradecimientos (opcional)
+\chapter*{Agradecimientos}
+Aquí puedes escribir tus agradecimientos.
+
+% Resumen
+\chapter*{Resumen}
+Aquí va el resumen de tu tesis.
+
+% Índice
+\tableofcontents
+\newpage
+
+% Introducción
+\chapter{Introducción}
+\input{introduccion.tex}
+
+% Marco Teórico
+\chapter{Marco Teórico}
+\input{marco_teorico.tex}
+
+% Metodología
+\chapter{Metodología}
+\input{metodologia.tex}
+
+% Resultados
+\chapter{Resultados}
+\input{resultados.tex}
+
+% Discusión
+\chapter{Discusión}
+\input{discusion.tex}
+
+% Conclusiones
+\chapter{Conclusiones}
+\input{conclusiones.tex}
+
+% Bibliografía
+\chapter*{Bibliografía}
+\addcontentsline{toc}{chapter}{Bibliografía}
+% Puedes usar BibTeX o escribir referencias manualmente aquí
+Aquí va la bibliografía.
+
+% Anexos
+\appendix
+\chapter{Anexos}
+Aquí van los anexos.
+
+\end{document}
+
